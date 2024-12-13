@@ -1,0 +1,132 @@
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2882f5; /* 문피아 로고의 파란색 */
+    padding: 20px 0;
+}
+
+#logo {
+    width: 150px; /* 로고 크기 */
+    margin-bottom: 10px; /* 로고와 제목 사이 간격 */
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* 폼 스타일 */
+form {
+    margin: 50px auto;
+    padding: 20px;
+    width: 50%;
+    background-color: #fff;
+    border: 2px solid #2882f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form button {
+    background-color: #2882f5; /* 문피아 로고 색상 */
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2882f5; /* 조금 더 어두운 파란색 */
+}
+
+/* 결과 영역 */
+#results {
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #2882f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-title {
+    font-size: 1.2rem;
+    color: #2882f5; /* 문피아 로고 색상 */
+    font-weight: bold;
+}
+
+.result-author {
+    font-size: 1rem;
+    color: #555;
+}
+
+.result-similarity {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* 자동완성 스타일 */
+#autocomplete-container {
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    width: calc(50% - 40px); /* 폼 크기에 맞게 조정 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover {
+    background-color: #e8f0fe; /* 문피아 로고의 연한 파란색 */
+}
